@@ -33,7 +33,7 @@ MYVA="myva"
 
 GPFF="microbial.*.protein.gpff.gz"
 
-IMG="yookuda/bioperl:1.6.923"
+IMG="yookuda/merge-a"
 
 INPUT_FNAME1="${INPUT1##*/}"
 INPUT_FNAME2="${INPUT2##*/}"
@@ -62,7 +62,6 @@ cp $INPUT7 ${OUTPUT1}.csv
 
 docker run \
     -v $DATA_DIR:/data \
-    -v $SCRIPTS_DIR:/scripts \
     -v $COG_DB_DIR:/cog \
     -v $REFSEQ_DB_DIR:/refseq \
     --rm \

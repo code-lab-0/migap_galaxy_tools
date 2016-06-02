@@ -8,8 +8,6 @@ shift
 OUTPUT1=$1
 shift
 
-SCRIPTS_DIR="/home/okuda/data/scripts"
-
 INPUT_FNAME1="${INPUT1##*/}"
 INPUT_FNAME2="${INPUT2##*/}"
 INPUT_FNAME3="${INPUT3##*/}"
@@ -22,10 +20,9 @@ DATA_DIR="/tmp/files/${CONTAINER_ID}/${DATA_DIR_TMP##*/}"
 
 OUTPUT_FNAME1="${OUTPUT1##*/}"
 
-IMG="yookuda/bioperl:1.6.923"
+IMG="yookuda/fa4tr"
 
 docker run -v $DATA_DIR:/data \
-       -v $SCRIPTS_DIR:/scripts \
        --rm \
        $IMG \
        perl /scripts/fa4tr.pl \

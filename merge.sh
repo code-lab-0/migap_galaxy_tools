@@ -44,7 +44,7 @@ OUTPUT_FNAME5="${OUTPUT5##*/}"
 OUTPUT_FNAME6="${OUTPUT6##*/}"
 OUTPUT_FNAME7="${OUTPUT7##*/}"
 
-IMG="yookuda/bioperl:1.6.923"
+IMG="yookuda/merge"
 
 docker run \
     -v $DATA_DIR:/data \
