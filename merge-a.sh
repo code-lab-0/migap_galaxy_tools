@@ -33,7 +33,7 @@ MYVA="myva"
 
 GPFF="microbial.*.protein.gpff.gz"
 
-IMG="yookuda/merge-a"
+IMG="yookuda/merge_a"
 
 INPUT_FNAME1="${INPUT1##*/}"
 INPUT_FNAME2="${INPUT2##*/}"
